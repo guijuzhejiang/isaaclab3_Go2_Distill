@@ -2,7 +2,7 @@
 
 [English Version](README.md) | [中文文档](README_ZH.md)
 
-This repository provides an open-source template and implementation for training a robust velocity-tracking locomotion policy on the Unitree Go2 quadrupedal robot over varied complex terrains. Built on **Isaac Lab v2.3.2** and **RSL-RL v5**, the repository features a full Sim-to-Real reinforcement learning pipeline using **Privileged-Information Teacher Training, Terrain Curriculum Learning, Policy Distillation (Behavior Cloning), and Student Fine-tuning**.
+This repository provides an open-source template and implementation for training a robust velocity-tracking locomotion policy on the Unitree Go2 quadrupedal robot over varied complex terrains. Built on **IsaacLab 3+Isaacsim6** and **RSL-RL v5**, the repository features a full Sim-to-Real reinforcement learning pipeline using **Privileged-Information Teacher Training, Terrain Curriculum Learning, Policy Distillation (Behavior Cloning), and Student Fine-tuning**.
 
 ---
 
