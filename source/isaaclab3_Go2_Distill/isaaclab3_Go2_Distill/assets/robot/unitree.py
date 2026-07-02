@@ -5,7 +5,7 @@ from isaaclab.actuators import IdealPDActuatorCfg, ImplicitActuatorCfg, DCMotorC
 from isaaclab.assets.articulation import ArticulationCfg
 
 
-UNITREE_MODEL_DIR = "/home/zzg/workspace/pycharm/isaaclab3_demo/source/isaaclab3_demo/isaaclab3_demo/assets/robot/unitree_model"
+UNITREE_MODEL_DIR = "/home/zzg/workspace/pycharm/isaaclab3_Go2_Distill/source/isaaclab3_Go2_Distill/isaaclab3_Go2_Distill/assets/robot/unitree_model"
 
 UNITREE_GO2_CFG = ArticulationCfg(
     spawn=sim_utils.UsdFileCfg(

@@ -10,18 +10,18 @@ from isaaclab_rl.rsl_rl import RslRlMLPModelCfg, RslRlOnPolicyRunnerCfg, RslRlPp
 
 @configclass
 class PPORunnerCfg(RslRlOnPolicyRunnerCfg):
-    num_steps_per_env = 16
-    max_iterations = 150
-    save_interval = 50
-    experiment_name = "cartpole_direct"
+    num_steps_per_env = 24
+    max_iterations = 10000
+    save_interval = 1000
+    experiment_name = "go2_velocity"
     actor = RslRlMLPModelCfg(
-        hidden_dims=[32, 32],
+        hidden_dims=[512, 256, 128],
         activation="elu",
         obs_normalization=False,
         distribution_cfg=RslRlMLPModelCfg.GaussianDistributionCfg(init_std=1.0),
     )
     critic = RslRlMLPModelCfg(
-        hidden_dims=[32, 32],
+        hidden_dims=[512, 256, 128],
         activation="elu",
         obs_normalization=False,
     )

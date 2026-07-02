@@ -17,7 +17,7 @@ from isaaclab_rl.rsl_rl import (
 @configclass
 class DistillationRunnerCfg(RslRlDistillationRunnerCfg):
     num_steps_per_env = 24
-    max_iterations = 10000
+    max_iterations = 20000
     save_interval = 1000
     experiment_name = "go2_distillation"
     #在go2_demo_velocity.py中定义的policy是教师网络"teacher"，定义的student是现在要学习的学生网络"policy"

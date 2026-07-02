@@ -17,14 +17,15 @@ from isaaclab.utils.configclass import configclass
 from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR, ISAACLAB_NUCLEUS_DIR
 from isaaclab.utils.noise import UniformNoiseCfg as Unoise
 
-from isaaclab3_demo.assets.robot.unitree import UNITREE_GO2_CFG as RobotCFG
-from isaaclab3_demo.tasks.manager_based.isaaclab3_demo import mdp
+from isaaclab3_Go2_Distill.assets.robot.unitree import UNITREE_GO2_CFG as RobotCFG
+from isaaclab3_Go2_Distill.tasks.manager_based.isaaclab3_go2_distill import mdp
 
 import isaaclab.terrains as terrain_gen
+from isaaclab.terrains.terrain_generator_cfg import TerrainGeneratorCfg
 from isaaclab_physx.physics import PhysxCfg
 
 
-COBBLESTONE_ROAD_CFG = terrain_gen.TerrainGeneratorCfg(
+COBBLESTONE_ROAD_CFG = TerrainGeneratorCfg(
     size=(8.0, 8.0),
     border_width=20.0,
     num_rows=10,
